@@ -104,7 +104,7 @@ DATABASES = {
         'NAME': 'storefront3',
         'HOST': 'localhost',
         'USER': 'postgres',
-        'PASSWORD': 'fyfel555',
+        'PASSWORD': 'DimasTest',
         'PORT': '5432',
     }
 }
@@ -182,4 +182,8 @@ EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 2525
-DEFAULT_FROM_EMAIL = '' 
+DEFAULT_FROM_EMAIL = 'nanomednis@gmail.com' 
+
+ADMINS = [
+    ('Dima', 'admin.dima@gmail.com')
+]
