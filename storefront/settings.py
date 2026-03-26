@@ -187,3 +187,5 @@ DEFAULT_FROM_EMAIL = 'nanomednis@gmail.com'
 ADMINS = [
     ('Dima', 'admin.dima@gmail.com')
 ]
+
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
