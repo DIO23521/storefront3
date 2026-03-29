@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3124f2779706270a7e8a9e80a3103481c471a2ade6669d773fd0a29e404ed56f"
+            "sha256": "864e645a7aa2744ddd59a8d9b561cf85e7d49e7cf819af561e6cb6ac208185e7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -1163,6 +1163,15 @@
             "markers": "python_version >= '3.12'",
             "version": "==6.0.3"
         },
+        "django-silk": {
+            "hashes": [
+                "sha256:41fcabe65d59d31ccdb69daeb3c3e6d30879ab2c00b0875b111fda0f69aec065",
+                "sha256:82b5a690d623935be916dd145e2f605a4ac9454d54e03df6a7ffcf38333c8444"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.10'",
+            "version": "==5.5.0"
+        },
         "docopt": {
             "hashes": [
                 "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"
@@ -1325,6 +1334,14 @@
             ],
             "markers": "python_version >= '3.9'",
             "version": "==2.3.9"
+        },
+        "gprof2dot": {
+            "hashes": [
+                "sha256:0742e4c0b4409a5e8777e739388a11e1ed3750be86895655312ea7c20bd0090e",
+                "sha256:35743e2d2ca027bf48fa7cba37021aaf4a27beeae1ae8e05a50b55f1f921a6ce"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==2025.4.14"
         },
         "greenlet": {
             "hashes": [
@@ -1659,11 +1676,11 @@
         },
         "pygments": {
             "hashes": [
-                "sha256:636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887",
-                "sha256:86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b"
+                "sha256:6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f",
+                "sha256:81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176"
             ],
-            "markers": "python_version >= '3.8'",
-            "version": "==2.19.2"
+            "markers": "python_version >= '3.9'",
+            "version": "==2.20.0"
         },
         "pytest": {
             "hashes": [
