@@ -29,7 +29,10 @@ class TestCreateProduct:
 
     def test_if_user_is_admin_returns_201(self, authenticate, create_product):
         authenticate(is_staff=True)
+        product = baker.prepare(Product)
+        data = model_to_dict(product, exclude=['id'])
 
-        response = create_product({'title': 'a'})
+        response = create_product(data)
 
         assert response.status_code == status.HTTP_201_CREATED
+        assert response.data['id'] > 0
