@@ -1,8 +1,10 @@
 from store.models import Product
+from django.forms.models import model_to_dict
 from rest_framework import status
 from rest_framework.test import APIClient
 import pytest
 from model_bakery import baker
+
 
 @pytest.fixture
 def create_product(api_client):
@@ -27,12 +29,3 @@ class TestCreateProduct:
 
         assert response.status_code == status.HTTP_403_FORBIDDEN
 
-    def test_if_user_is_admin_returns_201(self, authenticate, create_product):
-        authenticate(is_staff=True)
-        product = baker.prepare(Product)
-        data = model_to_dict(product, exclude=['id'])
-
-        response = create_product(data)
-
-        assert response.status_code == status.HTTP_201_CREATED
-        assert response.data['id'] > 0

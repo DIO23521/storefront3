@@ -8,3 +8,4 @@ general.log
 Pipfile.lock
 /media/
 /static/
+storefront/settings/dev.py
