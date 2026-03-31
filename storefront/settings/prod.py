@@ -27,3 +27,8 @@ CACHES = {
         }
     }
 }
+
+EMAIL_HOST = os.environ['MAILGUN_SMPT_SERVER']
+EMAIL_HOST_USER = os.environ['MAILGUN_SMPT_LOGIN']
+EMAIL_HOST_PASSWORD = os.environ['MAILGUN_SMPT_PASSWORD']
+EMAIL_PORT = os.environ['MAILGUN_SMPT_PORT']
